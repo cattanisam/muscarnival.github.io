@@ -9,20 +9,33 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-  background-color: black; }
+  background-color: #D00000; }
 
 html {
   width: 100%;
   height: 100%; }
 
-h1,
-h2,
+li {
+  color: red;
+  font-family: 'proxima-nova', bold, sans-serif;
+}
+h1{
+  color: red;
+}
+h2 {
+  color: red;
+  text-indent: 50px;
+}
 h3,
-h4,
-h5 {
+h4 { /*body text for waiver*/
   padding-bottom: 30px;
-  color: black;
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white; /*this changes both sub head and waiver text*/
+  font-family: 'proxima-nova', bold, sans-serif;
+  line-height: 140%; }
+h5 {
+  padding-bottom: 10px;
+  color: red; /*this changes both sub head and waiver text(only subhead now)*/
+  font-family: 'proxima-nova', bold, sans-serif;
   line-height: 140%; }
 
 h1 {
@@ -30,7 +43,7 @@ h1 {
 
 p {
   color: white;
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   font-size: 12px;
   padding-top: 12px; }
 
@@ -44,11 +57,10 @@ a {
     color: #1d9b6c; }
 
 #mainNav {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black; }
+  background-color: red; }
   #mainNav .navbar-toggler {
     font-size: 14px;
     padding: 11px;
@@ -81,11 +93,9 @@ a {
       #mainNav.navbar-shrink {
         padding-top: 10px;
         padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black; }
+        background: red; }
       #mainNav .nav-link.active {
-        outline: none;
-        background-color: rgba(255, 255, 255, 0.3); }
+        outline: none;}
         #mainNav .nav-link.active:hover {
           color: white; } }
 
@@ -96,7 +106,7 @@ a {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background-color: black;
+  background-color: #D00000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -106,8 +116,8 @@ a {
     vertical-align: middle; }
     .masthead .intro-body .brand-heading {
       font-size: 80px;
-      color: #438185;
-      font-family: 'Lobster', cursive;
+      color: white; /* this changes main heading colour */
+      font-family: 'proxima nova', sans-serif;
       padding: 60px;
       padding-bottom: 10px;
       margin: 0;
@@ -116,7 +126,7 @@ a {
     .masthead .intro-body .intro-text {
       font-size: 26px;
       color: #438185;
-      font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'proxima-nova', sans-serif; }
   @media (min-width: 768px) {
     .masthead {
       height: 100%;
@@ -134,7 +144,7 @@ a {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background-color: black;
+  background-color: #D00000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -144,12 +154,12 @@ a {
     vertical-align: middle; }
     .waiverhead .intro-body .brand-heading {
       font-size: 80px;
-      color: #438185;
-      font-family: 'Lobster', cursive;
+      color: black;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       background: rgba(0, 0, 0, 0.8);
       padding: 50px;
       padding-bottom: 0;
-      border: 6px solid  #438185;
+      border: 6px solid  white;
       border-radius: 100% !important; }
     .waiverhead .intro-body .intro-text {
       font-size: 26px;
@@ -204,7 +214,7 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
 
 .form-group {
-  font-family: 'Lobster', cursive;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   width: auto;
   margin: 0 auto;
   padding: 30px;
@@ -265,7 +275,7 @@ video {
   width: 10%;
   background-color: #438185;
   padding-top: 5px;
-  font-family: Lobster, cursive;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.8);
   height: 38px;
   margin: 0 auto;
@@ -273,7 +283,7 @@ video {
 
 .title-wrap {
   border: 10px solid  black;
-  border-radius: 100% !important;
+  /* border-radius: 100% !important; making the border a square not circle */
   margin-bottom: 50px;
   padding: 0 25px 0 25px; }
 
@@ -299,13 +309,13 @@ video {
   color: black; }
 
 .brand-subheading {
-  font-family: 'Lobster', cursive;
+  font-family: 'proxima nova', sans-serif;
   font-size: 50px;
   padding-bottom: 60px; }
 
 .brand-ending {
   font-size: 80px;
-  color: #438185;
+  color: white;
   font-family: 'Lobster', cursive;
   padding: 60px;
   margin: 0;
@@ -333,25 +343,18 @@ video {
   width: 100%; }
 
 .rainbow {
-  -webkit-animation: rainbow 10s infinite;
-  -ms-animation: rainbow 10s infinite;
-  -o-animation: rainbow 10s infinite;
-  animation: rainbow 10s infinite;
-  animation-timing-function: linear; }
+  color: white;
+}
 
 .rainbow-background {
-  -webkit-animation: rainbow-background 10s infinite;
-  -ms-animation: rainbow-background 10s infinite;
-  -o-animation: rainbow-background 10s infinite;
-  animation: rainbow-background 10s infinite;
-  animation-timing-function: linear; }
+  border-color: white;
+  color: white;
+}
 
 .rainbow-border {
-  -webkit-animation: rainbow-border 10s infinite;
-  -ms-animation: rainbow-border 10s infinite;
-  -o-animation: rainbow-border 10s infinite;
-  animation: rainbow-border 10s infinite;
-  animation-timing-function: linear; }
+  border-color: white;
+}
+
 
 @-webkit-keyframes rainbow {
   0% {
