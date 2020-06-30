@@ -3,7 +3,7 @@ function login () {
   showForm(".waiverhead")
 }
 
-function signUp () {
+function login2 () {
   console.log("here");
   const axios = require("axios");
   console.log("here");
