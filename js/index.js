@@ -34,7 +34,8 @@ function progressBar () {
 }
 
 function signUp() {
-  const result = await axios.post(`https://us-central1-eng-frosh-discord.cloudfunctions.net/sendConfirmationEmail`);
+  console.log("here");
+  axios.post(`https://us-central1-eng-frosh-discord.cloudfunctions.net/sendConfirmationEmail`);
 }
 
 (function($) {
