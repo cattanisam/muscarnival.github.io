@@ -67,10 +67,10 @@ function signUp() {
   if (window.location.href === "http://localhost:3000/" || window.location.href === "https://github.com/McGillEWeek/muscarnival.github.io/") {
     $(window).blur(pauseVideo)
   }
-  window.onbeforeunload = function()) {
+  window.onbeforeunload = function() {
     return "Please continue watching.";
   }
-  window.onunload = function()) {
+  window.onunload = function() {
     $(window).blur(pauseVideo)
   }
   /*else {
