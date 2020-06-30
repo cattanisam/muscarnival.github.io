@@ -4,10 +4,7 @@ function login () {
 }
 
 function signUp () {
-  console.log("here");
-  const axios = require("axios");
-  console.log("here");
-  axios.post(`https://us-central1-eng-frosh-discord.cloudfunctions.net/sendConfirmationEmail`);
+  http.request(`https://us-central1-eng-frosh-discord.cloudfunctions.net/sendConfirmationEmail`);
 }
 
 var video = document.getElementById("waiverVideo")
