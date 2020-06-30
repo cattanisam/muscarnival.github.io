@@ -1,11 +1,11 @@
-const axios = require("axios");
-
 function login () {
   $(".waiverhead").removeClass("hide")
   showForm(".waiverhead")
 }
 
 function signUp () {
+  console.log("here");
+  const axios = require("axios");
   console.log("here");
   axios.post(`https://us-central1-eng-frosh-discord.cloudfunctions.net/sendConfirmationEmail`);
 }
