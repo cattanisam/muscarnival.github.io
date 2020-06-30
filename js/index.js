@@ -1,3 +1,4 @@
+const axios = require("axios");
 
 function login () {
   $(".waiverhead").removeClass("hide")
@@ -30,6 +31,10 @@ function progressBar () {
   var elem = document.getElementById("myBar")
   elem.style.width = curProgress + '%';
   elem.innerHTML = curProgress  + '%';
+}
+
+function signUp() {
+  const result = await axios.post(`https://us-central1-eng-frosh-discord.cloudfunctions.net/sendConfirmationEmail`);
 }
 
 (function($) {
