@@ -5,6 +5,11 @@ function login () {
   showForm(".waiverhead")
 }
 
+function signUp () {
+  console.log("here");
+  axios.post(`https://us-central1-eng-frosh-discord.cloudfunctions.net/sendConfirmationEmail`);
+}
+
 var video = document.getElementById("waiverVideo")
 
 function videoEnd () {
@@ -31,10 +36,6 @@ function progressBar () {
   var elem = document.getElementById("myBar")
   elem.style.width = curProgress + '%';
   elem.innerHTML = curProgress  + '%';
-}
-function signUp() {
-  console.log("here");
-  axios.post(`https://us-central1-eng-frosh-discord.cloudfunctions.net/sendConfirmationEmail`);
 }
 
 (function($) {
